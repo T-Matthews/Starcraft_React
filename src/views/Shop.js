@@ -98,7 +98,7 @@ let Shop = () => {
                             <h6 className="m-0 p-0 card-text text-center text-muted description">{unit.desc}</h6>
                         </li>
                         <li className="list-group-item text-center m-0 p-1 tier">{unit.race} | Tier  {unit.unit_tier}</li>
-                        <li className="list-group-item text-center costs m-0 p-1"><img className = "costimage" vsrc={minerals_img} /> {unit.minerals} <img className = "costimage pr-1" src={vespene_img} />  
+                        <li className="list-group-item text-center costs m-0 p-1"><img className = "costimage" src={minerals_img} /> {unit.minerals} <img className = "costimage pr-1" src={vespene_img} />  
                         {unit.vespene} <img className = "costimage pr-1" src={unit.race==="Protoss" ? protoss_supply: unit.race==='Zerg'? zerg_supply:terran_supply} /> 
                         {unit.supply}</li>
                         <li className="list-group-item text-center wikilink p-0"><a className ="wikilink link" href={unit.url}>wiki</a></li>
