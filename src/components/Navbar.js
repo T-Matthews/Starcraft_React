@@ -29,7 +29,7 @@ useEffect(() => {
     if (user){
         get(child(ref(db), `carts/${user.uid}`)).then((snapshot) =>{
             if (snapshot.exists()){
-
+                setCart(snapshot.val())
             }else {
                 console.log("No data available")
             }
@@ -69,7 +69,6 @@ useEffect(() => {
 <button className=" btn btn-sm btn-info starcrafttext sign-in-btn mr-4" onClick={signout}><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Out</button>    
             </div>
             </div>
-            
             
             :
          <button className="btn btn-sm btn-info starcrafttext sign-in-btn mr-4" onClick={signin}><i class="fa fa-sign-in" aria-hidden="true"></i> Sign-in</button>       

@@ -6,7 +6,7 @@ import {set,ref} from 'firebase/database'
 
 let Shop = () => {
     const {data: user} = useUser()
-    const db = useDatabase
+    const db = useDatabase()
     //
     let zerg_supply = 'https://i.ibb.co/2tpj004/zerg-supply.jpg'
     let terran_supply = 'https://i.ibb.co/SBN9mmY/terran-supply.jpg'
@@ -113,7 +113,7 @@ let Shop = () => {
 
 
 
-                    : <h1 className='starcrafttext'>Loading Warriors</h1>}
+                    : <h1 className='text-center starcrafttext'>Loading Warriors</h1>}
                 {/* <h1>Protoss</h1>
         <h1>{typeof punits === 'object' && units[0] ? punits[0].name : 'false' }</h1>
         <h1>Terran</h1>
