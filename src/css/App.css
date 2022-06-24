@@ -1,0 +1,112 @@
+body{
+  background-image: url('https://wallpaperaccess.com/full/200721.jpg');
+  background-size:100vw 100vh;
+  background-repeat: no-repeat;
+  background-color: rgb(28, 12, 36);
+}
+@font-face{
+  font-family: 'Starcraft';
+  src: local('StarcraftNormal'),
+    url("../fonts/StarcraftNormal.ttf") format("truetype")
+}
+
+#p-card{
+  background-image:url('https://i.ibb.co/HdBGNSX/Protoss-Symbol-png.png');
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-position: 20px;
+ 
+
+  
+}
+#t-card{
+  background-image:url('https://i.ibb.co/9Y9PjdN/Terran-logo-png.png');
+  background-size:80px;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-position: 20px;
+
+  
+}
+#z-card{
+  background-image:url('https://i.ibb.co/kK7VR6c/zerg-png.png');
+  background-size:130px;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-position: 0px;
+
+  
+}
+
+.list-group-item{
+ opacity:.85;
+border: 0;
+}
+.unitname{
+  font-size: 18px;
+}
+.description{
+  font-size: 10px;
+}
+.tier{
+  font-size: 12px;
+}
+.costs{
+  font-size: 12px
+}
+.costimage{
+  max-height: 17px;
+}
+.unitimage{
+object-fit:cover;
+
+
+}
+.card{
+  border-color: rgb(255, 255, 255);
+}
+.wikilink{
+  font-size: 8px;
+  max-height: 12px;
+  position:relative;
+  top:-1px
+}
+.starcrafttext{
+  font-family: 'Starcraft';
+  color:white;
+}
+.smalltext{
+  font-size: 11px;
+}
+.welcome{
+  color: white;
+  position: relative;
+  top: 5px;
+}
+.signed-in-nav{
+  display: flex;
+  
+}
+.top-card{
+  background-color: rgb(49, 8, 70);
+  border: 1px white solid;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  color: rgb(245, 203, 255);
+
+}
+.top-card-header{
+  position: relative;
+
+}
+.race-descriptions{
+  margin-top: 5vh;
+  color:rgb(245, 203, 255) ;
+  display: flex;
+}
+.art-image{
+  max-width: 100%;
+  min-width: 100%
+}
