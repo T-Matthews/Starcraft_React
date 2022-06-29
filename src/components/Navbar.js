@@ -15,6 +15,7 @@ let Navbar = () => {
   }
   const {cart, setCart} = useContext(DataContext)
     const { status, data: user} = useUser() 
+    
   const signin = async () =>{
     const provider = new GoogleAuthProvider()
     let u = await signInWithPopup(auth,provider);

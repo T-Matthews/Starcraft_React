@@ -23,32 +23,7 @@ let Shop = () => {
         console.log(data)
         setUnits(data.data)
     }
-    // let getZUnitData = async() =>{
-    //     let zdata = await axios.get('https://tm-starcraft-api.herokuapp.com/api/zerg')
-    //     return zdata.status === 200 ? zdata : null
-    // }
-    // let loadZUnitData = async() =>{
-    //     let zdata=await getZUnitData();
-    //     setZUnits(zdata.data)
-    // }
-    // let getPUnitData = async() =>{
-    //     let pdata = await axios.get('https://tm-starcraft-api.herokuapp.com/api/protoss')
-    //     return pdata.status === 200 ? pdata : null
-    // }
-    // let loadPUnitData = async() =>{
-    //     let pdata=await getPUnitData();
-    //     setPUnits(pdata.data)
-    // }
-    // let getTUnitData = async() =>{
-    //     let tdata = await axios.get('https://tm-starcraft-api.herokuapp.com/api/terran')
-    //     return tdata.status === 200 ? tdata : null
-    // }
-    // let loadTUnitData = async() =>{
-    //     let tdata=await getTUnitData();
-    //     console.log(tdata)
-    //     setTUnits(tdata.data)
-    // }
-
+ 
     const [units, setUnits] = useState(() => { loadUnitData(); });
     // const [punits,setPUnits]=useState(()=>{loadPUnitData();});
     // const [zunits,setZUnits]=useState(()=>{loadZUnitData();});
